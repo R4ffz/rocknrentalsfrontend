@@ -58,9 +58,14 @@
 ---
 
 ## ⚙️ Como Rodar o Projeto
-1- Clone este repositório: git clone https://github.com/seu-usuario/rock-n-roll-rentals.git
-2- Navegue até a pasta do projeto: cd rock-n-roll-rentals
-3- Abra o arquivo index.html no navegador para iniciar a aplicação.
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/rock-n-roll-rentals.git
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd rock-n-roll-rentals
+3. Abra o arquivo index.html no navegador para iniciar a aplicação.
 
 ---
 
