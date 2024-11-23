@@ -1,6 +1,6 @@
 # 🎸 Rock N' Roll Rentals
 
-**Rock N' Roll Rentals** é uma plataforma desenvolvida para aluguel de instrumentos musicais voltada para os amantes de rock e metal. O projeto oferece uma experiência imersiva, combinando um design temático com funcionalidades práticas, como cadastro de usuários, login e aluguel de equipamentos.
+**Rock N' Roll Rentals** é uma plataforma desenvolvida para aluguel de instrumentos musicais voltada para os amantes de rock e metal. O projeto oferece uma experiência imersiva, combinando um design temático com funcionalidades práticas, como cadastro de usuários, login e aluguel de equipamentos. Até o momento o projeto consta apenas com o front-end upado aqui. A Parte de Back-end ainda está sendo desenvolvida utilizando Java, Spring e um Banco de Dados MySql e logo o projeto estará completo aqui.
 
 ---
 
@@ -58,9 +58,9 @@
 ---
 
 ## ⚙️ Como Rodar o Projeto
--Clone este repositório: git clone https://github.com/seu-usuario/rock-n-roll-rentals.git
--Navegue até a pasta do projeto: cd rock-n-roll-rentals
--Abra o arquivo index.html no navegador para iniciar a aplicação.
+1- Clone este repositório: git clone https://github.com/seu-usuario/rock-n-roll-rentals.git
+2- Navegue até a pasta do projeto: cd rock-n-roll-rentals
+3- Abra o arquivo index.html no navegador para iniciar a aplicação.
 
 ---
 
