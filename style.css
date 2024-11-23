@@ -1,0 +1,232 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('img/background/bg1.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Rock Salt', sans-serif;
+}
+
+.body-login,
+.body-cadastro {
+  background-size: cover;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.navbar {
+  background-color: #000000 !important;
+  border-bottom: 2px solid #ff1100;
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff1100;
+  text-shadow: 0 0 8px #ff1100;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff1100;
+  text-shadow: 0 0 8px #ff1100;
+}
+
+input,
+label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ff1100;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #ff1100;
+  box-shadow: 0 0 8px #ff1100;
+}
+
+.btn-neon {
+  background-color: #ff1100;
+  border: 2px solid #ff1100;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px #ff1100, 0 0 30px #ff1100;
+}
+
+.btn-neon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #ff1100, 0 0 40px #ff1100;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ebebeb;
+  text-shadow: 2px 2px 10px #ff1100;
+}
+
+a,
+label {
+  color: #f8f9fa;
+  text-shadow: 0 0 40px #000000;
+}
+
+p {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 8px #ff1100;
+}
+
+.nav-link:hover {
+  color: #ff1100 !important;
+  text-shadow: 2px 2px 8px #ff1100;
+}
+
+.hero {
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 15px #000000;
+
+}
+
+.hero p {
+  font-size: 1.5rem;
+  text-shadow: 0 0 15px #000000;
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-neon {
+  background-color: #ff1100;
+  border: 2px solid #ff1100;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px #ff1100, 0 0 20px #000000;
+}
+
+.btn-neon:hover {
+  background-color: #ff1100;
+  color: #000;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff1100, 0 0 40px #000000;
+}
+
+.card {
+  background: linear-gradient(135deg, #1c1c1c, #333);
+  border: none;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgb(238, 0, 0);
+}
+
+.d-flex {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #FF0000 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #CC0000 !important;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 15px 0;
+  border-top: 2px solid #ff1100;
+  text-align: center;
+
+}
+
+footer a {
+  color: #ff1100;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+ 
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

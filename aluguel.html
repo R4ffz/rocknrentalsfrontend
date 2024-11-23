@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluguel - Rock N' Roll Rentals</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Rock N' Roll Rentals</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="quem-somos.html">Quem Somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-5">
+    <h2 class="mb-4">Instrumentos para Aluguel</h2>
+    <div class="d-flex justify-content-center mb-4">
+      <button class="btn btn-outline-primary me-2" onclick="filtrarCategoria('Todos')">Todos</button>
+      <button class="btn btn-outline-primary me-2" onclick="filtrarCategoria('Guitarras')">Guitarras</button>
+      <button class="btn btn-outline-primary me-2" onclick="filtrarCategoria('Amplificadores')">Amplificadores</button>
+      <button class="btn btn-outline-primary me-2" onclick="filtrarCategoria('Pedais')">Pedais</button>
+      <button class="btn btn-outline-primary" onclick="filtrarCategoria('Pedaleiras')">Pedaleiras</button>
+    </div>
+    <div class="row" id="itensAluguel">
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Guitarras">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Guitarra Gibson Les Paul</h5>
+            <img src="img/guitarras/gibsonlespaul.png" alt="Guitarra Gibson Les Paul" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelGuitarraGibson">
+              <option value="7">7 dias - R$250.00</option>
+              <option value="15">15 dias - R$350.00</option>
+              <option value="30">30 dias - R$ 500.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Guitarra Gibson Les Paul', 'diasAluguelGuitarraGibson')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Guitarras">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Guitarra Fender Stratocaster</h5>
+            <img src="img/guitarras/fenderstrato.png" alt="Fender Stratocaster" width="250px" height="225px" >
+            <select class="form-select mb-2" id="diasAluguelGuitarraFender">
+              <option value="7">7 dias - R$250.00</option>
+              <option value="15">15 dias - R$350.00</option>
+              <option value="30">30 dias - R$ 500.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Guitarra Fender Stratocaster', 'diasAluguelGuitarraFender')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Guitarras">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Guitarra Ibanez RG</h5>
+            <img src="img/guitarras//ibanezrg.png" alt="Ibanez" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelGuitarraIbanez">
+              <option value="7">7 dias - R$250.00</option>
+              <option value="15">15 dias - R$350.00</option>
+              <option value="30">30 dias - R$ 500.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Guitarra Ibanez RG', 'diasAluguelGuitarraIbanez')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Guitarras">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Guitarra Jackson</h5>
+            <img src="img/guitarras/jackson.png" alt="Jackson" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelGuitarraJackson">
+              <option value="7">7 dias - R$250.00</option>
+              <option value="15">15 dias - R$350.00</option>
+              <option value="30">30 dias - R$ 500.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Guitarra Jackson', 'diasAluguelGuitarraJackson')">Alugar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Amplificadores">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Amplificador Marshall</h5>
+            <img src="img/amps/marshallamp.png" alt="Amplificador Marshall" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelAmplificadorMarshall">
+              <option value="7">7 dias - R$ 100.00 </option>
+              <option value="15">15 dias - R$ 150.00</option>
+              <option value="30">30 dias - R$ 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Amplificador Marshall', 'diasAluguelAmplificadorMarshall')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Amplificadores">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Amplificador Fender</h5>
+            <img src="img/amps/fenderamp.png" alt="Amplificador Fender" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelAmplificadorFender">
+              <option value="7">7 dias - R$ 100.00 </option>
+              <option value="15">15 dias - R$ 150.00</option>
+              <option value="30">30 dias - R$ 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Amplificador Fender', 'diasAluguelAmplificadorFender')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Amplificadores">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Amplificador Orange</h5>
+            <img src="img/amps/orange.png" alt="Amplificador Orange" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelAmplificadorOrange">
+              <option value="7">7 dias - R$ 100.00 </option>
+              <option value="15">15 dias - R$ 150.00</option>
+              <option value="30">30 dias - R$ 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Amplificador Orange', 'diasAluguelAmplificadorOrange')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Amplificadores">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Amplificador Peavey</h5>
+            <img src="img/amps/peavey.png" alt="Amplificador Peavey" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelAmplificadorPeavey">
+              <option value="7">7 dias - R$ 100.00 </option>
+              <option value="15">15 dias - R$ 150.00</option>
+              <option value="30">30 dias - R$ 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Amplificador Peavey', 'diasAluguelAmplificadorPeavey')">Alugar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Pedais">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pedal Boss DS-1</h5>
+            <img src="img/pedais/pedalbossds1.png" alt="Pedal Boss DS-1" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelPedalBoss">
+              <option value="7">7 dias - R$ 50.00</option>
+              <option value="15">15 dias - R$ 100.00</option>
+              <option value="30">30 dias - 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Pedal Boss DS-1', 'diasAluguelPedalBoss')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Pedais">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pedal Fuzz</h5>
+            <img src="img/pedais/pedalfuzz.png" alt="Pedal Fuzz" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelPedalFuzz">
+              <option value="7">7 dias - R$ 50.00</option>
+              <option value="15">15 dias - R$ 100.00</option>
+              <option value="30">30 dias - 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Pedal Fuzz', 'diasAluguelPedalFuzz')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Pedais">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pedal Ibanez TubeScreamer</h5>
+            <img src="img/pedais/pedaltubescreamer.png" alt="Pedal Ibanez Tube Screamer" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelIbanezTubeScreamer">
+              <option value="7">7 dias - R$ 50.00</option>
+              <option value="15">15 dias - R$ 100.00</option>
+              <option value="30">30 dias - 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Pedal Ibanez Tube Screamer', 'diasAluguelIbanezTubeScreamer')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Pedaleiras">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pedaleira Zoom G1XFOUR</h5>
+            <img src="img/pedaleiras/zoomg1xfour.png" alt="Pedaleira Zoom G1XFOUR" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelPedaleiraZoom">
+              <option value="7">7 dias - R$ 50.00</option>
+              <option value="15">15 dias - R$ 100.00</option>
+              <option value="30">30 dias - 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Pedaleira Zoom G1Xon', 'diasAluguelPedaleiraZoom')">Alugar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 item-aluguel" data-categoria="Pedaleiras">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pedaleira QuadCortex</h5>
+            <img src="img/pedaleiras/quadcortex.png" alt="Pedaleira QuadCortex" width="250px" height="250px" >
+            <select class="form-select mb-2" id="diasAluguelPedaleiraQuadCortex">
+              <option value="7">7 dias - R$ 50.00</option>
+              <option value="15">15 dias - R$ 100.00</option>
+              <option value="30">30 dias - 200.00</option>
+            </select>
+            <button class="btn btn-neon" onclick="alugarInstrumento('Pedaleira QuadCortex', 'diasAluguelPedaleiraQuadCortex')">Alugar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mt-5">Meus Aluguéis</h2>
+    <div id="meusAlugueis" class="row">
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Rock N' Roll Rentals. Feito para os amantes de Rock!</p>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a> | 
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
