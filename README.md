@@ -55,10 +55,13 @@
 ├── 📄 script.js           # Funcionalidades em JavaScript
 └── 📄 README.md           # Documentação do projeto
 
+---
 ##⚙️ Como Rodar o Projeto
 -Clone este repositório: git clone https://github.com/seu-usuario/rock-n-roll-rentals.git
 -Navegue até a pasta do projeto: cd rock-n-roll-rentals
 -Abra o arquivo index.html no navegador para iniciar a aplicação.
+
+---
 
 ## 👨‍💻 Autor
 Desenvolvido por Rafael Barros Cabral, um entusiasta de tecnologia apaixonado por música, inovação e resultados escaláveis.
